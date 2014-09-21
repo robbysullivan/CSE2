@@ -17,9 +17,9 @@ public static void main(String[] args){
     myScanner= new Scanner(System.in);
 //  enter big macs
 System.out.print("Enter the number of big macs: ");
-    int bigMacs = myScanner.nextInt();
+   
     if(myScanner.hasNextInt()){
-    
+    int bigMacs = myScanner.nextInt();
     
         
 //  create if statement
