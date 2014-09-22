@@ -26,9 +26,12 @@ System.out.print("Enter month of year (1-12): ");
         }// end else if
         else if(month == 2){
             System.out.print("Enter an int giving the year: ");
-            double year = myScanner.nextInt();
-            year = (double) year*0.25;
-            if(year == 0){
+            int year = myScanner.nextInt();
+            double year1 = year*.25;
+            int year2 = (int) year1;
+            year2 = year2*4;
+            
+            if(year == year2){
                 System.out.println("The month has 29 days.");
             }// end if
             else{
