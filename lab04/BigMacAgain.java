@@ -35,7 +35,7 @@ System.out.print("Enter the number of big macs: ");
         double mealTotal = fries+burgerCost;
         System.out.println("You ordered "+bigMacs+" Big Macs for a cost of "+bigMacs+"x"+costPerBigMac+" = $"+ burgerCost);
         System.out.print("Do you want an order of fries? (Y,y,N,n): ");
-        String answer=myScanner.next();
+        String answer = myScanner.Next();
         if(answer.equals("Y")||answer.equals("y")){
             System.out.println("You ordered fries at a cost of $"+fries);
            
