@@ -1,30 +1,26 @@
+import java.util.Scanner;
 public class WelcomeClass{
     
 public static void main(String[] args){
-int j = 1;
-int counter = 1;
-for(int i=1;i<=8;i++){
-    
-    if(i%j == 0){
-        
-        for(int k=1;k<=counter;k++){
-           for(int l=1;l<=k;l++){
-               if(k==l){
-                   System.out.println(i);
-               }
-               else{
-                   System.out.print(i);
-               }
-           } 
-        }
-    
-        j = i;
-        
-        counter++;
+    Scanner scan = new Scanner(System.in);
+    int A[] = new int[10];
+    for(int j=0;j<10;j++){
+        System.out.println("Int:");
+        A[j] = scan.nextInt();
     }
-    else{continue;}
-}
-
+    int min = A[0];
+    int max = A[0];
+    for(int b: A){
+        if(A[b] < min){
+            min = A[b];
+        }
+        else{continue;}
+        if(A[b] > max){
+            max = A[b];
+        }
+        else{continue;}
+    }
+System.out.println("Min: "+min+" Max: "+max);
 }
 
 }
